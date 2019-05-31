@@ -1,0 +1,60 @@
+git show nombre_archivo
+muestra los cambios que han existido en un nombre_archivo
+
+git log --stat
+
+git clone url
+
+git fetch -> git merge
+
+git pull
+
+
+
+TAGS Y VERSIONES EN GIT Y GITHUB
+————————————————————————————————
+
+Este comando muestra toda la historia. No solo la de la rama en la que estamos, si no de todas:
+  $git log --all
+
+  $git log --all --graph
+
+  $git log --all --graph --decorate --oneline
+
+Acá el código para crear un tag:
+
+  $git tag -a v0.1 -m "Primera versión" 292ff27 
+
+Mostrar los tags que tengo:
+  $git tag
+
+Mostrar commits asosiados a los tags:
+  $git show-ref --tags
+
+Lo interesante de los tags es usarlos en internet, para referenciar versiones del proyecto.
+
+Enviar los tags a github:
+  $git push origin --tags
+
+Eliminar un tag del local:
+  $git tag -d dormido
+
+Eliminar un tag del remoto:
+  $git push origin :refs/tags/dormido
+
+
+
+MANEJO DE RAMAS EN GITHUB
+—————————————————————————
+
+Mostrar las ramas:
+  $git show-branch
+  $git show-branch --all
+
+Abrir una app. Un entorno gráfico:
+  $gitk
+
+Para enviar una rama al repositorio:
+  $git co <rama-a-enviar>
+  $git push origin <rama-a-enviar>
+
