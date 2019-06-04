@@ -58,3 +58,23 @@ Para enviar una rama al repositorio:
   $git co <rama-a-enviar>
   $git push origin <rama-a-enviar>
 
+
+
+GIT IGNORE
+——————————
+Los archivos binarios no deberían ir dentro del repositorio de git. Estos archivos se deberían compartir por un CDN, rsync o ftp.
+https://postimages.org/
+https://imgur.com/
+
+
+README
+——————
+readme.rd 
+Usa markdown, se puede agregar HTML.
+
+
+
+PÁGINAS DE GITHUB
+—————————————————
+
+pages.github.com
